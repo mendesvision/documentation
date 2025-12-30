@@ -6,7 +6,7 @@
   "primary": "#fd2dc6",
   "light": "#ff6fd9",
   "dark": "#c91fa0"
-  }
+  },
   "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
