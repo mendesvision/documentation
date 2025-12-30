@@ -68,6 +68,11 @@
           "icon": "telegram"
         },
         {
+          "anchor": "Comunidade Discord",
+          "href": "https://discord.gg/MjBNhgtfnE",
+          "icon": "discord"
+        },
+        {
           "anchor": "Dashboard",
           "href": "https://eyowallet.com",
           "icon": "link"
@@ -106,7 +111,8 @@
   },
   "footer": {
     "socials": {
-      "telegram": "https://t.me/eyowallet"
+      "telegram": "https://t.me/eyowallet",
+      "discord": "https://discord.gg/MjBNhgtfnE"
     }
   }
 }
