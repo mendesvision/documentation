@@ -1,0 +1,133 @@
+---
+title: 'Integrar a Mginex'
+description: 'Aprenda a integrar a Eyo Wallet à Mginex para automatizar pagamentos PIX no seu e-commerce de produtos digitais'
+icon: 'store'
+---
+
+A **Mginex** é uma plataforma de e-commerce especializada em produtos digitais, oferecendo uma experiência completa para quem quer vender infoprodutos, cursos, e-books, licenças de software e muito mais. Com uma interface intuitiva e recursos avançados de automação, a Mginex se destaca como uma das melhores opções do mercado brasileiro.
+
+<Tip>
+  Conheça a Mginex em [mginex.com](https://mginex.com) e descubra como vender seus produtos digitais de forma profissional!
+</Tip>
+
+## Por que usar Mginex + Eyo Wallet?
+
+<CardGroup cols={2}>
+  <Card title="Pagamentos Instantâneos" icon="bolt">
+    Receba pagamentos PIX em tempo real com confirmação automática
+  </Card>
+  <Card title="Sem Burocracia" icon="check">
+    Integração simples sem necessidade de CNPJ ou aprovações demoradas
+  </Card>
+  <Card title="Taxas Competitivas" icon="percent">
+    Aproveite as menores taxas do mercado para maximizar seus lucros
+  </Card>
+  <Card title="Entrega Automática" icon="paper-plane">
+    Produtos liberados automaticamente após confirmação do pagamento
+  </Card>
+</CardGroup>
+
+<Warning>
+  **Limites de valor para pagamentos:**
+  
+  - **Valor mínimo**: R$ 1,00
+  - **Valor máximo**: R$ 1.000,00
+  
+  Pagamentos com valores fora desse intervalo resultarão em erro.
+</Warning>
+
+---
+
+## Passo 1: Criar uma conta na Eyo Wallet
+
+Acesse [eyowallet.com](https://eyowallet.com) e crie sua conta caso ainda não tenha uma.
+
+<Card title="Criar Conta" icon="user-plus" href="https://eyowallet.com/signup">
+  Crie sua conta gratuitamente em poucos minutos
+</Card>
+
+---
+
+## Passo 2: Acessar as Credenciais
+
+Após fazer login, acesse a página de credenciais da sua conta:
+
+<Card title="Credenciais" icon="key" href="https://eyowallet.com/dashboard/credentials">
+  https://eyowallet.com/dashboard/credentials
+</Card>
+
+---
+
+## Passo 3: Autorizar todos os IPs
+
+Na página de credenciais, autorize todos os IPs para permitir que a Mginex se conecte à sua conta.
+
+<Frame caption="Autorizar todos os IPs">
+  <img src="/images/tutoriais/autorizar-ips.png" alt="Tela mostrando como autorizar todos os IPs" />
+</Frame>
+
+<Warning>
+  Ao autorizar todos os IPs, qualquer serviço com sua API Key poderá acessar sua conta. Mantenha sua chave em segurança.
+</Warning>
+
+---
+
+## Passo 4: Criar uma API Key para a Mginex
+
+Na página de credenciais, clique no botão **Criar API Key**:
+
+<Frame caption="Botão para criar API Key na Eyo Wallet">
+  <img src="/images/tutoriais/botao-criar-key.png" alt="Botão para criar API Key na Eyo Wallet" />
+</Frame>
+
+No modal que aparecer, preencha os dados e **configure a URL de Webhook da Mginex**:
+
+<Warning>
+  **URL de Webhook da Mginex (IMPORTANTE!):**
+  
+  ```
+  https://api.mginex.com/api/payment/gateways/eyo-wallet/callback
+  ```
+  
+  Cole esta URL exatamente no campo de Webhook para que a Mginex receba as confirmações de pagamento automaticamente.
+</Warning>
+
+<Frame caption="Modal de criação de API Key na Eyo Wallet">
+  <img src="/images/tutoriais/modal-criar-key.png" alt="Modal de criação de API Key na Eyo Wallet" />
+</Frame>
+
+Após criar, copie a API Key clicando no botão de copiar:
+
+<Frame caption="Copiar API Key na Eyo Wallet">
+  <img src="/images/tutoriais/botao-copiar-key.png" alt="Botão para copiar API Key na Eyo Wallet" />
+</Frame>
+
+<Tip>
+  Guarde sua API Key em local seguro. Ela será usada para configurar a Mginex no próximo passo.
+</Tip>
+
+---
+
+## Passo 5: Configurar na Mginex
+
+Acesse o painel administrativo da sua loja na Mginex e vá em **Configurações de Pagamento**:
+
+<Frame caption="Acessar configurações de pagamento na Mginex">
+  <img src="/images/tutoriais/pagamentos-mginex.png" alt="Configurações de pagamento na Mginex" />
+</Frame>
+
+Em seguida, selecione **Eyo Wallet** e cole sua API Key:
+
+<Frame caption="Configurar API Key da Eyo Wallet">
+  <img src="/images/tutoriais/configurar-mginex.png" alt="Modal para configurar API Key na Mginex" />
+</Frame>
+
+---
+
+## Pronto!
+
+Sua integração está configurada. Agora seus clientes podem pagar com PIX e receber os produtos digitais automaticamente após a confirmação do pagamento.
+
+<Card title="Precisa de ajuda?" icon="headset" href="https://t.me/eyowallet">
+  Junte-se ao nosso Discord para suporte
+</Card>
