@@ -579,9 +579,9 @@
         "properties": {
           "value": {
             "type": "number",
-            "description": "Valor da transação em reais. Mínimo: R$ 1,00. Máximo: R$ 1.000,00 por transação.",
-            "minimum": 1,
-            "maximum": 1000
+            "description": "Valor da transação em reais. Mínimo: R$ 3,00. Máximo: R$ 2.000,00 por transação.",
+            "minimum": 3,
+            "maximum": 2000
           },
           "description": {
             "type": "string",
@@ -794,8 +794,8 @@
         "properties": {
           "amount": {
             "type": "number",
-            "description": "Valor do saque em reais. Mínimo: R$ 5,00",
-            "minimum": 5
+            "description": "Valor do saque em reais. Mínimo: R$ 7,00",
+            "minimum": 7
           },
           "pixKey": {
             "type": "string",
